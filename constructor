@@ -1,0 +1,25 @@
+class student:
+    def __init__(self,a="unknown",b=50,c=100):
+        self.name=a
+        self.rollno=b
+        self.marks=c
+
+    def printvalue(self):
+        print("name=",self.name)
+        print("rollno=",self.rollno)
+        print("marks=",self.marks)
+    def evaluate(self):
+        if(self.marks>90):
+            print("a grade")
+        elif(self.marks>80 and self.marks<90):
+            print("b grade")
+        elif(self.marks>70 and self.marks<80):
+            print("c grade")
+s0=student()
+s0.printvalue()
+s0.evaluate()
+
+s1=student("adarsh",14,98)
+s1.printvalue()
+s1.evaluate()
+           
